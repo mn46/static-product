@@ -338,9 +338,11 @@ body {
 
 .color {
     padding: 0 8%;
-    display: flex;
-    justify-content: space-around;
-    border-right: 0.15em solid #2c2c2c;
+    text-align: center;
+    font-size: 130%;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #294ff8;
 }
 
 .blue {
