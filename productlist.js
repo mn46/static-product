@@ -37,7 +37,7 @@ function showProduct(product) {
     if (product.discount) {
         productClone.querySelector("article").classList.add("discount");
         productClone.querySelector("article .text").textContent = "-" + product.discount + "%";
-        productClone.querySelector("article .price-info .new-price").textContent = Math.floor((product.price * (100 - product.discount)) / 100) + " DKK";
+        productClone.querySelector("article .price-info .new-price").textContent = Math.floor((product.price - (100 - product.discount)) / 100) + " DKK";
     }
 
     // parent
