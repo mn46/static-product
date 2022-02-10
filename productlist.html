@@ -21,72 +21,83 @@
 
     <main class="productlist">
     
-        <div class="product">
+        <template id="product-template">
 
-            <div class="product-picture">
+            <article class="product">
+                <div class="product-picture">
+                    <img src="" alt="Product photo">
+                    <div class="productlist-details">
+                        <p class="productlist-name">Sahara Team India Fanwear Round Neck Jersey</p>
+                        <p class="productlist-brand">Nike | T-shirt</p>
+                    </div>
+                </div>
+
+                <div class="price-info">
+                    <div>DKK 1595,-</div>
+                    <div>DKK 1295,-</div>
+                </div>
+
+                <div class="button"><a href="product.html" aria-label="Go to the product page">read more</a></div>
+            </article>
+
+        </template>
+
+        <!--<template id="product-discount"> 
+            
+            <article class="product discount">
+
+                <div class="product-picture">
                 <img src="assets/1163.webp" alt="Product photo">
                 <div class="productlist-details">
                     <p class="productlist-name">Sahara Team India Fanwear Round Neck Jersey</p>
                     <p class="productlist-brand">Nike | T-shirt</p>
                 </div>
                 
-            </div>
-
-            <div class="price-info">
-                <div>DKK 1595,-</div>
-                <div></div>
-            </div>
-
-            <div class="button"><a href="product.html" aria-label="Go to the product page">read more</a></div>
-
-        </div>
-
-        <div class="product" class="discount">
-
-            <div class="product-picture">
-                <img src="assets/1163.webp" alt="Product photo">
-                <div class="productlist-details">
-                    <p class="productlist-name">Sahara Team India Fanwear Round Neck Jersey</p>
-                    <p class="productlist-brand">Nike | T-shirt</p>
                 </div>
+
+                <div class="price-info">
+                    <div class="old-price">DKK 1595,-</div>
+                    <div class="new-price">DKK 1276,-</div>
+                </div>
+
+                <div class="button"><a href="product.html" aria-label="Go to the product page">read more</a></div>
+
+            </article>
+
+        </template> -->
+
+        <!-- <template id=""> 
+            
+            <article class="product sold-out">
+
+                <div class="product-picture">
+                    <div class="sold-out-container">
+                        <img src="" alt="Product photo" class="sold-out-pic">
+                        <div class="sold-out-text">sold out</div>
+                    </div>
+                    <div class="productlist-details">
+                        <p class="productlist-name"></p>
+                        <p class="productlist-brand"></p>
+                    </div>
                 
-            </div>
-
-            <div class="price-info">
-                <div class="old-price">DKK 1595,-</div>
-                <div class="new-price">DKK 1276,-</div>
-            </div>
-
-            <div class="button"><a href="product.html" aria-label="Go to the product page">read more</a></div>
-
-        </div>
-
-        <div class="product" class="sold-out">
-
-            <div class="product-picture">
-                <div class="sold-out-container">
-                    <img src="assets/1163.webp" alt="Product photo" class="sold-out-pic">
-                    <div class="sold-out-text">sold out</div>
                 </div>
-                <div class="productlist-details">
-                    <p class="productlist-name">Sahara Team India Fanwear Round Neck Jersey</p>
-                    <p class="productlist-brand">Nike | T-shirt</p>
+
+                <div class="price-info">
+                    <div>DKK 1595,-</div>
+                    <div></div>
                 </div>
-                
-            </div>
 
-            <div class="price-info">
-                <div>DKK 1595,-</div>
-                <div></div>
-            </div>
+                <div class="sold-out-button">read more</div>
 
-            <div class="sold-out-button"><a href="product.html" aria-label="Go to the product page">read more</a></div>
+            </article>
 
-        </div>
+        </template> -->
 
     </main>
 
     <footer></footer>
+
+    <script src="productlist.js"></script>
 
 </body>
 

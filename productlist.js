@@ -1,4 +1,4 @@
-// getting the data
+// fetching the data
 
 const url="https://kea-alt-del.dk/t7/api/products";
 
@@ -17,19 +17,29 @@ function displayProductlist(data) {
 function showProduct(product) {
     
     // product template
-    const template = document.querySelector(".product").content;
+    const template = document.querySelector("#product-template").content;
 
     const productClone = template.cloneNode(true);
 
+    // adding data
 
     productClone.querySelector("img").src = `https://kea-alt-del.dk/t7/images/webp/640/${product.id}.webp`;
+    productClone.querySelector(".productlist-name").textContent = product.productdisplayname;
+    productClone.querySelector(".productlist-brand").textContent = product.brandname + " | " + product.articletype;
 
-    productClone.querySelector(".productlist-name").textContent = product.brandname;
+    // code for sold-out product
 
+    if (product.soldout) {
+        productClone.querySelector("article").classList.add("sold-out");
+    }
+
+    if (product.discount) {
+        productClone.querySelector("article").classList.add("discount");
+    }
 
     // parent
 
-    const parent = document.querySelector("main");
+    const parent = document.querySelector(".productlist");
     parent.appendChild(productClone);
 }
 
