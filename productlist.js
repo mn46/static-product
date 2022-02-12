@@ -1,6 +1,6 @@
 // fetching the data
 
-const url="https://kea-alt-del.dk/t7/api/products";
+const url="https://kea-alt-del.dk/t7/api/products/";
 
 fetch(url)
     .then(function(res) {
@@ -37,7 +37,7 @@ function showProduct(product) {
     if (product.discount) {
         productClone.querySelector("article").classList.add("discount");
         productClone.querySelector("article .text").textContent = "-" + product.discount + "%";
-        productClone.querySelector("article .price-info .new-price").textContent = Math.floor((product.price - (100 - product.discount)) / 100) + " DKK";
+        productClone.querySelector("article .price-info .new-price").textContent = Math.floor(product.price * ((100 - product.discount) / 100)) + " DKK";
     }
 
     // parent

@@ -1,4 +1,6 @@
-const url="https://kea-alt-del.dk/t7/api/categories";
+
+
+const url = "https://kea-alt-del.dk/t7/api/categories";
 
 fetch(url)
     .then(function(res) {
@@ -17,7 +19,12 @@ function showCategory(categories) {
 
     categoryClone = categoryTemplate.cloneNode(true);
 
-    categoryClone.querySelector("article.category p").textContent = categories.category;
+    categoryClone.querySelector("article p").textContent = categories.category;
+
+    categoryClone.querySelector("article a").href = `productlist.html?category=${categories.category}`;
+
+    // new URLSearchParams(window.location.search).getAll(`${categories.category}`);
 
     document.querySelector("main").appendChild(categoryClone);
 }
+
