@@ -21,9 +21,9 @@ function showCategory(categories) {
 
     categoryClone.querySelector("article p").textContent = categories.category;
 
-    categoryClone.querySelector("article a").href = `productlist.html?category=${categories.category}`;
+    // I can replace "spaces" with other signs using .replace(" ", "_") in the link
 
-    // new URLSearchParams(window.location.search).getAll(`${categories.category}`);
+    categoryClone.querySelector("article a").href = `productlist.html?category=${categories.category}`;
 
     document.querySelector("main").appendChild(categoryClone);
 }
