@@ -286,7 +286,7 @@ body {
 }
 
 .product-photo img {
-    width: 100%;
+    max-width: 90%;
     height: auto;
 }
 
@@ -315,7 +315,7 @@ body {
 }
 
 .brand, .gender, .type {
-    font-size: 125%;
+    font-size: 105%;
     color: var(--white);
     font-weight: 400;
 }
@@ -339,25 +339,7 @@ body {
     font-size: 130%;
     font-weight: 700;
     text-transform: uppercase;
-    color: #294ff8;
-}
-
-.blue {
-    width: 15%;
-    aspect-ratio: 1 / 1;
-    background-color: var(--dark-grey);
-}
-
-.black {
-    width: 15%;
-    aspect-ratio: 1 / 1;
-    background-color: #000;
-}
-
-.red {
-    width: 15%;
-    aspect-ratio: 1 / 1;
-    background-color: #e62746;
+    color: var(--dark-grey);
 }
 
 .size-grid {

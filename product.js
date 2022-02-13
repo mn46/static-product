@@ -24,6 +24,7 @@ function showProduct(product) {
     document.querySelector(".description p:first-of-type").innerHTML=product.description;
     document.querySelector(".description p:nth-child(2)").innerHTML=product.styledesc;
     document.querySelector(".description div.textile").innerHTML=product.materialcaredesc;
+    document.querySelector(".product-style div.color").textContent=product.basecolour;
 
     // adding the image
 
